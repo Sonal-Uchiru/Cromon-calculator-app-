@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC0FAA60277199D00031E8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0FAA5F277199D00031E8E3 /* AppDelegate.swift */; };
+		BC0FAA62277199D00031E8E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0FAA61277199D00031E8E3 /* SceneDelegate.swift */; };
+		BC0FAA64277199D00031E8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0FAA63277199D00031E8E3 /* ViewController.swift */; };
+		BC0FAA67277199D00031E8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0FAA65277199D00031E8E3 /* Main.storyboard */; };
+		BC0FAA69277199D20031E8E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0FAA68277199D20031E8E3 /* Assets.xcassets */; };
+		BC0FAA6C277199D20031E8E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0FAA6A277199D20031E8E3 /* LaunchScreen.storyboard */; };
+		BC0FAA77277199D20031E8E3 /* Cromon_calculator_app_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0FAA76277199D20031E8E3 /* Cromon_calculator_app_Tests.swift */; };
+		BC0FAA81277199D20031E8E3 /* Cromon_calculator_app_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0FAA80277199D20031E8E3 /* Cromon_calculator_app_UITests.swift */; };
+		BC0FAA83277199D20031E8E3 /* Cromon_calculator_app_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0FAA82277199D20031E8E3 /* Cromon_calculator_app_UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC0FAA73277199D20031E8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0FAA54277199D00031E8E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC0FAA5B277199D00031E8E3;
+			remoteInfo = "Cromon(calculator app)";
+		};
+		BC0FAA7D277199D20031E8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0FAA54277199D00031E8E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC0FAA5B277199D00031E8E3;
+			remoteInfo = "Cromon(calculator app)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC0FAA5C277199D00031E8E3 /* Cromon(calculator app).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cromon(calculator app).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0FAA5F277199D00031E8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC0FAA61277199D00031E8E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC0FAA63277199D00031E8E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC0FAA66277199D00031E8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC0FAA68277199D20031E8E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC0FAA6B277199D20031E8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC0FAA6D277199D20031E8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC0FAA72277199D20031E8E3 /* Cromon(calculator app)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cromon(calculator app)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0FAA76277199D20031E8E3 /* Cromon_calculator_app_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cromon_calculator_app_Tests.swift; sourceTree = "<group>"; };
+		BC0FAA7C277199D20031E8E3 /* Cromon(calculator app)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cromon(calculator app)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0FAA80277199D20031E8E3 /* Cromon_calculator_app_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cromon_calculator_app_UITests.swift; sourceTree = "<group>"; };
+		BC0FAA82277199D20031E8E3 /* Cromon_calculator_app_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cromon_calculator_app_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC0FAA59277199D00031E8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0FAA6F277199D20031E8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0FAA79277199D20031E8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC0FAA53277199D00031E8E3 = {
+			isa = PBXGroup;
+			children = (
+				BC0FAA5E277199D00031E8E3 /* Cromon(calculator app) */,
+				BC0FAA75277199D20031E8E3 /* Cromon(calculator app)Tests */,
+				BC0FAA7F277199D20031E8E3 /* Cromon(calculator app)UITests */,
+				BC0FAA5D277199D00031E8E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC0FAA5D277199D00031E8E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC0FAA5C277199D00031E8E3 /* Cromon(calculator app).app */,
+				BC0FAA72277199D20031E8E3 /* Cromon(calculator app)Tests.xctest */,
+				BC0FAA7C277199D20031E8E3 /* Cromon(calculator app)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC0FAA5E277199D00031E8E3 /* Cromon(calculator app) */ = {
+			isa = PBXGroup;
+			children = (
+				BC0FAA5F277199D00031E8E3 /* AppDelegate.swift */,
+				BC0FAA61277199D00031E8E3 /* SceneDelegate.swift */,
+				BC0FAA63277199D00031E8E3 /* ViewController.swift */,
+				BC0FAA65277199D00031E8E3 /* Main.storyboard */,
+				BC0FAA68277199D20031E8E3 /* Assets.xcassets */,
+				BC0FAA6A277199D20031E8E3 /* LaunchScreen.storyboard */,
+				BC0FAA6D277199D20031E8E3 /* Info.plist */,
+			);
+			path = "Cromon(calculator app)";
+			sourceTree = "<group>";
+		};
+		BC0FAA75277199D20031E8E3 /* Cromon(calculator app)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BC0FAA76277199D20031E8E3 /* Cromon_calculator_app_Tests.swift */,
+			);
+			path = "Cromon(calculator app)Tests";
+			sourceTree = "<group>";
+		};
+		BC0FAA7F277199D20031E8E3 /* Cromon(calculator app)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC0FAA80277199D20031E8E3 /* Cromon_calculator_app_UITests.swift */,
+				BC0FAA82277199D20031E8E3 /* Cromon_calculator_app_UITestsLaunchTests.swift */,
+			);
+			path = "Cromon(calculator app)UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC0FAA5B277199D00031E8E3 /* Cromon(calculator app) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0FAA86277199D20031E8E3 /* Build configuration list for PBXNativeTarget "Cromon(calculator app)" */;
+			buildPhases = (
+				BC0FAA58277199D00031E8E3 /* Sources */,
+				BC0FAA59277199D00031E8E3 /* Frameworks */,
+				BC0FAA5A277199D00031E8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cromon(calculator app)";
+			productName = "Cromon(calculator app)";
+			productReference = BC0FAA5C277199D00031E8E3 /* Cromon(calculator app).app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC0FAA71277199D20031E8E3 /* Cromon(calculator app)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0FAA89277199D20031E8E3 /* Build configuration list for PBXNativeTarget "Cromon(calculator app)Tests" */;
+			buildPhases = (
+				BC0FAA6E277199D20031E8E3 /* Sources */,
+				BC0FAA6F277199D20031E8E3 /* Frameworks */,
+				BC0FAA70277199D20031E8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC0FAA74277199D20031E8E3 /* PBXTargetDependency */,
+			);
+			name = "Cromon(calculator app)Tests";
+			productName = "Cromon(calculator app)Tests";
+			productReference = BC0FAA72277199D20031E8E3 /* Cromon(calculator app)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC0FAA7B277199D20031E8E3 /* Cromon(calculator app)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0FAA8C277199D20031E8E3 /* Build configuration list for PBXNativeTarget "Cromon(calculator app)UITests" */;
+			buildPhases = (
+				BC0FAA78277199D20031E8E3 /* Sources */,
+				BC0FAA79277199D20031E8E3 /* Frameworks */,
+				BC0FAA7A277199D20031E8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC0FAA7E277199D20031E8E3 /* PBXTargetDependency */,
+			);
+			name = "Cromon(calculator app)UITests";
+			productName = "Cromon(calculator app)UITests";
+			productReference = BC0FAA7C277199D20031E8E3 /* Cromon(calculator app)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC0FAA54277199D00031E8E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					BC0FAA5B277199D00031E8E3 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					BC0FAA71277199D20031E8E3 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = BC0FAA5B277199D00031E8E3;
+					};
+					BC0FAA7B277199D20031E8E3 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = BC0FAA5B277199D00031E8E3;
+					};
+				};
+			};
+			buildConfigurationList = BC0FAA57277199D00031E8E3 /* Build configuration list for PBXProject "Cromon(calculator app)" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC0FAA53277199D00031E8E3;
+			productRefGroup = BC0FAA5D277199D00031E8E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC0FAA5B277199D00031E8E3 /* Cromon(calculator app) */,
+				BC0FAA71277199D20031E8E3 /* Cromon(calculator app)Tests */,
+				BC0FAA7B277199D20031E8E3 /* Cromon(calculator app)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC0FAA5A277199D00031E8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0FAA6C277199D20031E8E3 /* LaunchScreen.storyboard in Resources */,
+				BC0FAA69277199D20031E8E3 /* Assets.xcassets in Resources */,
+				BC0FAA67277199D00031E8E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0FAA70277199D20031E8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0FAA7A277199D20031E8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC0FAA58277199D00031E8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0FAA64277199D00031E8E3 /* ViewController.swift in Sources */,
+				BC0FAA60277199D00031E8E3 /* AppDelegate.swift in Sources */,
+				BC0FAA62277199D00031E8E3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0FAA6E277199D20031E8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0FAA77277199D20031E8E3 /* Cromon_calculator_app_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0FAA78277199D20031E8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0FAA83277199D20031E8E3 /* Cromon_calculator_app_UITestsLaunchTests.swift in Sources */,
+				BC0FAA81277199D20031E8E3 /* Cromon_calculator_app_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC0FAA74277199D20031E8E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC0FAA5B277199D00031E8E3 /* Cromon(calculator app) */;
+			targetProxy = BC0FAA73277199D20031E8E3 /* PBXContainerItemProxy */;
+		};
+		BC0FAA7E277199D20031E8E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC0FAA5B277199D00031E8E3 /* Cromon(calculator app) */;
+			targetProxy = BC0FAA7D277199D20031E8E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC0FAA65277199D00031E8E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC0FAA66277199D00031E8E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC0FAA6A277199D20031E8E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC0FAA6B277199D20031E8E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC0FAA84277199D20031E8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC0FAA85277199D20031E8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC0FAA87277199D20031E8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VK487JWD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cromon(calculator app)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DemonBound.Cromon-calculator-app-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC0FAA88277199D20031E8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VK487JWD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cromon(calculator app)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DemonBound.Cromon-calculator-app-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC0FAA8A277199D20031E8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VK487JWD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DemonBound.Cromon-calculator-app-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cromon(calculator app).app/Cromon(calculator app)";
+			};
+			name = Debug;
+		};
+		BC0FAA8B277199D20031E8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VK487JWD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DemonBound.Cromon-calculator-app-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cromon(calculator app).app/Cromon(calculator app)";
+			};
+			name = Release;
+		};
+		BC0FAA8D277199D20031E8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VK487JWD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DemonBound.Cromon-calculator-app-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cromon(calculator app)";
+			};
+			name = Debug;
+		};
+		BC0FAA8E277199D20031E8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VK487JWD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DemonBound.Cromon-calculator-app-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cromon(calculator app)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC0FAA57277199D00031E8E3 /* Build configuration list for PBXProject "Cromon(calculator app)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0FAA84277199D20031E8E3 /* Debug */,
+				BC0FAA85277199D20031E8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0FAA86277199D20031E8E3 /* Build configuration list for PBXNativeTarget "Cromon(calculator app)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0FAA87277199D20031E8E3 /* Debug */,
+				BC0FAA88277199D20031E8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0FAA89277199D20031E8E3 /* Build configuration list for PBXNativeTarget "Cromon(calculator app)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0FAA8A277199D20031E8E3 /* Debug */,
+				BC0FAA8B277199D20031E8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0FAA8C277199D20031E8E3 /* Build configuration list for PBXNativeTarget "Cromon(calculator app)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0FAA8D277199D20031E8E3 /* Debug */,
+				BC0FAA8E277199D20031E8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC0FAA54277199D00031E8E3 /* Project object */;
+}
