@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var userInputEquation:String = ""
     var errorFlag:Int = 0
     var floatingPointCount:Int = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
         userInputEquation = ""
         floatingPointCount = 0
         errorFlag = 0
+       
     }
     // + / - positiive value or negative value (need to handle later)
     @IBAction func precisionBtn(_ sender: Any) {
@@ -77,14 +79,23 @@ class ViewController: UIViewController {
     }
     @IBAction func backBtn(_ sender: Any) {
         let equation:String = String(userInputEquationField.text!);
-        
-        if(equation.last! == " "){
-            userInputEquationField.text = String(userInputEquationField.text!.dropLast(3))
-            userInputEquation = String(userInputEquationField.text!)
+        if(equation == ""){
+            userInputEquationField.text = ""
+            answerField.text = "0"
+            userInputEquation = ""
+            floatingPointCount = 0
+            errorFlag = 0
+            
         }else{
-            userInputEquationField.text = String(userInputEquationField.text!.dropLast())
-            userInputEquation = String(userInputEquationField.text!)
+            if(equation.last! == " "){
+                userInputEquationField.text = String(userInputEquationField.text!.dropLast(3))
+                userInputEquation = String(userInputEquationField.text!)
+            }else{
+                userInputEquationField.text = String(userInputEquationField.text!.dropLast())
+                userInputEquation = String(userInputEquationField.text!)
+            }
         }
+       
 
     }
     @IBAction func divisionBtn(_ sender: Any) {
@@ -236,6 +247,7 @@ class ViewController: UIViewController {
     
     // display the answer (need error handling)
     @IBAction func equalBtn(_ sender: Any){
+       
         let preEquation:String = String(userInputEquation).replacingOccurrences(of: " x ", with: " * ", options: .literal, range: nil)
         let lastEquation:String = String(preEquation).replacingOccurrences(of: "%", with: " / 100.0", options: .literal, range: nil)
         if(lastEquation == ""){
@@ -252,6 +264,7 @@ class ViewController: UIViewController {
                 return
             }
             answerField.text = String(describing: totalValue)
+         
         }
         
 //            answerField.text = "Syntax error"
