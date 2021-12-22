@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         let equation:String = String(userInputEquationField.text!);
         if(equation != ""){
             if(equation.last! == "-" || equation.last! == "%"){
-                answerField.text = "Syntax error"
+                //answerField.text = "Syntax error"
             }else{
                 let decimalCharacters = CharacterSet.decimalDigits
                 let lastCharacter = String(equation.last!)
@@ -60,8 +60,8 @@ class ViewController: UIViewController {
         if(!checkAlreadyExisitOperator()){
         let equation:String = String(userInputEquationField.text!);
         if(equation != ""){
-            if(equation.last! == " "){
-                answerField.text = "Syntax error"
+            if(equation.last! == " " || equation.last! == "%"){
+                //answerField.text = "Syntax error"
             }else{
                 userInputEquation = String(userInputEquationField.text!) + "%"
                 userInputEquationField.text = String(userInputEquationField.text!) + "%"
@@ -158,46 +158,63 @@ class ViewController: UIViewController {
     }
   
     @IBAction func number1Btn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         userInputEquationField.text = String(userInputEquationField.text!) + "1"
-        userInputEquation = String(userInputEquationField.text!)
+            userInputEquation = String(userInputEquationField.text!)
+            
+        }
     }
     @IBAction func number2Btn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         userInputEquationField.text = String(userInputEquationField.text!) + "2"
-        userInputEquation = String(userInputEquationField.text!)
+            userInputEquation = String(userInputEquationField.text!)
+            
+        }
     }
     @IBAction func number3Btn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         userInputEquationField.text = String(userInputEquationField.text!) + "3"
-        userInputEquation = String(userInputEquationField.text!)
+            userInputEquation = String(userInputEquationField.text!)}
     }
     @IBAction func number4Btn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         userInputEquationField.text = String(userInputEquationField.text!) + "4"
-        userInputEquation = String(userInputEquationField.text!)
+            userInputEquation = String(userInputEquationField.text!)}
     }
     @IBAction func number5Btn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         userInputEquationField.text = String(userInputEquationField.text!) + "5"
-        userInputEquation = String(userInputEquationField.text!)
+            userInputEquation = String(userInputEquationField.text!)}
     }
     @IBAction func number6Btn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         userInputEquationField.text = String(userInputEquationField.text!) + "6"
-        userInputEquation = String(userInputEquationField.text!)
+            userInputEquation = String(userInputEquationField.text!)}
     }
     @IBAction func number7Btn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         userInputEquationField.text = String(userInputEquationField.text!) + "7"
-        userInputEquation = String(userInputEquationField.text!)
+            userInputEquation = String(userInputEquationField.text!)}
     }
     @IBAction func number8Btn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         userInputEquationField.text = String(userInputEquationField.text!) + "8"
-        userInputEquation = String(userInputEquationField.text!)
+            userInputEquation = String(userInputEquationField.text!)}
     }
     @IBAction func number9Btn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         userInputEquationField.text = String(userInputEquationField.text!) + "9"
-        userInputEquation = String(userInputEquationField.text!)
+            userInputEquation = String(userInputEquationField.text!)}
     }
     @IBAction func number0Btn(_ sender: Any) {
-        userInputEquationField.text = String(userInputEquationField.text!) + "0"
-        userInputEquation = String(userInputEquationField.text!)
+        if(!checkPrecentageSymbol()){
+            userInputEquationField.text = String(userInputEquationField.text!) + "0"
+            userInputEquation = String(userInputEquationField.text!)
+        }
+  
     }
     @IBAction func dotBtn(_ sender: Any) {
+        if(!checkPrecentageSymbol()){
         let equation:String = String(userInputEquationField.text!);
         if(equation != ""){
             if(equation.last! == " " || !equation.last!.isNumber){
@@ -214,14 +231,13 @@ class ViewController: UIViewController {
             userInputEquation = String(userInputEquationField.text!)
         }
        
-        
+        }
     }
     
     // display the answer (need error handling)
     @IBAction func equalBtn(_ sender: Any){
         let preEquation:String = String(userInputEquation).replacingOccurrences(of: " x ", with: " * ", options: .literal, range: nil)
         let lastEquation:String = String(preEquation).replacingOccurrences(of: "%", with: " / 100.0", options: .literal, range: nil)
-        print(lastEquation)
         if(lastEquation == ""){
             userInputEquationField.text = ""
             answerField.text = "0"
@@ -271,6 +287,21 @@ class ViewController: UIViewController {
         }else{
             return false
         }
+    }
+    
+    func checkPrecentageSymbol()->Bool{
+        let equation:String = String(userInputEquationField.text!);
+        if(equation != ""){
+            if(equation.last! == "%"){
+                return true
+            }else{
+                return false
+            }
+            
+        }else{
+            return false
+        }
+      
     }
     
     
