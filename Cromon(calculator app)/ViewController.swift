@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var userInputEquationField: UILabel!
     
     var userInputEquation:String = ""
+    var errorFlag:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,22 +26,117 @@ class ViewController: UIViewController {
         userInputEquationField.text = ""
         answerField.text = "0"
         userInputEquation = ""
+        errorFlag = 0
     }
-    // + / - positiive value or negative value
+    // + / - positiive value or negative value (need to handle later)
     @IBAction func precisionBtn(_ sender: Any) {
+        if(!checkFloatingPoints()){
+        let equation:String = String(userInputEquationField.text!);
+        if(equation != ""){
+            if(equation.last! == "-"){
+                answerField.text = "Syntax error"
+            }else{
+                let decimalCharacters = CharacterSet.decimalDigits
+                let lastCharacter = String(equation.last!)
+                let decimalRange = lastCharacter.rangeOfCharacter(from: decimalCharacters)
+                if(decimalRange == nil){
+                    userInputEquationField.text = String(userInputEquationField.text!) + "-"
+                    userInputEquation = String(userInputEquationField.text!)
+                }
+          
+            }
+        }else{
+            userInputEquationField.text = String(userInputEquationField.text!) + "-"
+            userInputEquation = String(userInputEquationField.text!)
+        }
+       }
+
     }
     
+    // handle later
     @IBAction func precentageBtn(_ sender: Any) {
+      
     }
     @IBAction func backBtn(_ sender: Any) {
+        let equation:String = String(userInputEquationField.text!);
+        
+        if(equation.last! == " "){
+            userInputEquationField.text = String(userInputEquationField.text!.dropLast(3))
+            userInputEquation = String(userInputEquationField.text!)
+        }else{
+            userInputEquationField.text = String(userInputEquationField.text!.dropLast())
+            userInputEquation = String(userInputEquationField.text!)
+        }
+
     }
     @IBAction func divisionBtn(_ sender: Any) {
+        
+        if(!checkAlreadyExisitOperator()){
+        let equation:String = String(userInputEquationField.text!);
+        if(equation != ""){
+            if(equation.last! == " "){
+                answerField.text = "Syntax error"
+            }else{
+                userInputEquationField.text = String(userInputEquationField.text!) + " / "
+                userInputEquation = String(userInputEquationField.text!)
+            }
+        }else{
+            userInputEquationField.text = String(userInputEquationField.text!) + " / "
+            userInputEquation = String(userInputEquationField.text!)
+        }
+        }
+        
     }
     @IBAction func multiplyBtn(_ sender: Any) {
+        if(!checkAlreadyExisitOperator()){
+        let equation:String = String(userInputEquationField.text!);
+        if(equation != ""){
+            if(equation.last! == " "){
+                answerField.text = "Syntax error"
+            }else{
+                userInputEquation = String(userInputEquationField.text!) + " x "
+                userInputEquationField.text = String(userInputEquationField.text!) + " x "
+            }
+        }else{
+            userInputEquation = String(userInputEquationField.text!) + " x "
+            userInputEquationField.text = String(userInputEquationField.text!) + " x "
+        }
+        }
+       
     }
     @IBAction func addBtn(_ sender: Any) {
+        if(!checkAlreadyExisitOperator()){
+        let equation:String = String(userInputEquationField.text!);
+        if(equation != ""){
+            if(equation.last! == " "){
+                answerField.text = "Syntax error"
+            }else{
+                userInputEquationField.text = String(userInputEquationField.text!) + " + "
+                userInputEquation = String(userInputEquationField.text!)
+            }
+        }else{
+            userInputEquationField.text = String(userInputEquationField.text!) + " + "
+            userInputEquation = String(userInputEquationField.text!)
+        }
+            
+        }
     }
     @IBAction func minuBtn(_ sender: Any) {
+        if(!checkAlreadyExisitOperator()){
+            let equation:String = String(userInputEquationField.text!);
+            if(equation != ""){
+                if(equation.last! == " "){
+                    answerField.text = "Syntax error"
+                }else{
+                    userInputEquationField.text = String(userInputEquationField.text!) + " - "
+                    userInputEquation = String(userInputEquationField.text!)
+                }
+            }else{
+                userInputEquationField.text = String(userInputEquationField.text!) + " - "
+                userInputEquation = String(userInputEquationField.text!)
+            }
+        }
+      
     }
   
     @IBAction func number1Btn(_ sender: Any) {
@@ -88,9 +184,60 @@ class ViewController: UIViewController {
         userInputEquation = String(userInputEquationField.text!)
     }
     
-    // display the answer
-    @IBAction func equalBtn(_ sneder: Any){
+    // display the answer (need error handling)
+    @IBAction func equalBtn(_ sender: Any){
+        let lastEquation:String = String(userInputEquation).replacingOccurrences(of: " x ", with: " * ", options: .literal, range: nil)
+        if(lastEquation == ""){
+            userInputEquationField.text = ""
+            answerField.text = "0"
+            userInputEquation = ""
+        }else if(lastEquation.first! == " " || lastEquation.last! == " " || lastEquation.last! == "-" || lastEquation.last! == "."){
+            userInputEquationField.text = ""
+            answerField.text = "Syntax error"
+            userInputEquation = ""
+        }else{
+            let expn =  NSExpression(format:lastEquation)
+            guard let totalValue = expn.expressionValue(with: nil, context: nil) as? Double else{
+                return
+            }
+            answerField.text = String(describing: totalValue)
+        }
+        
+//            answerField.text = "Syntax error"
+        
         
     }
+    
+    func checkAlreadyExisitOperator()->Bool{
+        let equation:String = String(userInputEquationField.text!);
+        if(equation != ""){
+            if(equation.last == " "){
+                return true
+            }else if(equation.last == "."){
+                return true
+            }else if(equation.last == "-"){
+               return true
+            }else{
+                return false
+            }
+        }else{
+            return false
+        }
+    }
+    
+    func checkFloatingPoints()->Bool{
+        let equation:String = String(userInputEquationField.text!);
+        if(equation != ""){
+           if(equation.last == "."){
+                return true
+            }else{
+               return false
+            }
+        }else{
+            return false
+        }
+    }
+    
+    
 }
 

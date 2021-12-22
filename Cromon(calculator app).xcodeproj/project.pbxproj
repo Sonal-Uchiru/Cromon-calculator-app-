@@ -49,6 +49,7 @@
 		BC0FAA7C277199D20031E8E3 /* Cromon(calculator app)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cromon(calculator app)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0FAA80277199D20031E8E3 /* Cromon_calculator_app_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cromon_calculator_app_UITests.swift; sourceTree = "<group>"; };
 		BC0FAA82277199D20031E8E3 /* Cromon_calculator_app_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cromon_calculator_app_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC0FAA8F2772607B0031E8E3 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				BC0FAA68277199D20031E8E3 /* Assets.xcassets */,
 				BC0FAA6A277199D20031E8E3 /* LaunchScreen.storyboard */,
 				BC0FAA6D277199D20031E8E3 /* Info.plist */,
+				BC0FAA8F2772607B0031E8E3 /* Header.h */,
 			);
 			path = "Cromon(calculator app)";
 			sourceTree = "<group>";
@@ -457,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DemonBound.Cromon-calculator-app-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Cromon(calculator app)/Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -487,6 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DemonBound.Cromon-calculator-app-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Cromon(calculator app)/Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
