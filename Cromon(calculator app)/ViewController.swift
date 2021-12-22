@@ -108,10 +108,12 @@ class ViewController: UIViewController {
             }else{
                 userInputEquationField.text = String(userInputEquationField.text!) + " / "
                 userInputEquation = String(userInputEquationField.text!)
+                floatingPointCount = 0
             }
         }else{
             userInputEquationField.text = String(userInputEquationField.text!) + " / "
             userInputEquation = String(userInputEquationField.text!)
+            floatingPointCount = 0
         }
         }
         
@@ -125,10 +127,12 @@ class ViewController: UIViewController {
             }else{
                 userInputEquation = String(userInputEquationField.text!) + " x "
                 userInputEquationField.text = String(userInputEquationField.text!) + " x "
+                floatingPointCount = 0
             }
         }else{
             userInputEquation = String(userInputEquationField.text!) + " x "
             userInputEquationField.text = String(userInputEquationField.text!) + " x "
+            floatingPointCount = 0
         }
         }
        
@@ -142,10 +146,12 @@ class ViewController: UIViewController {
             }else{
                 userInputEquationField.text = String(userInputEquationField.text!) + " + "
                 userInputEquation = String(userInputEquationField.text!)
+                floatingPointCount = 0
             }
         }else{
             userInputEquationField.text = String(userInputEquationField.text!) + " + "
             userInputEquation = String(userInputEquationField.text!)
+            floatingPointCount = 0
         }
             
         }
@@ -159,10 +165,12 @@ class ViewController: UIViewController {
                 }else{
                     userInputEquationField.text = String(userInputEquationField.text!) + " - "
                     userInputEquation = String(userInputEquationField.text!)
+                    floatingPointCount = 0
                 }
             }else{
                 userInputEquationField.text = String(userInputEquationField.text!) + " - "
                 userInputEquation = String(userInputEquationField.text!)
+                floatingPointCount = 0
             }
         }
       
@@ -230,6 +238,7 @@ class ViewController: UIViewController {
         let equation:String = String(userInputEquationField.text!);
         if(equation != ""){
             if(equation.last! != "."){
+             
                 if(equation.last! == " " || !equation.last!.isNumber){
                     floatingPointCount = 0
                 }
