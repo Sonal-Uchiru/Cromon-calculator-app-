@@ -225,17 +225,21 @@ class ViewController: UIViewController {
   
     }
     @IBAction func dotBtn(_ sender: Any) {
+        print(floatingPointCount)
         if(!checkPrecentageSymbol()){
         let equation:String = String(userInputEquationField.text!);
         if(equation != ""){
-            if(equation.last! == " " || !equation.last!.isNumber){
-                floatingPointCount = 0
+            if(equation.last! != "."){
+                if(equation.last! == " " || !equation.last!.isNumber){
+                    floatingPointCount = 0
+                }
+                if(floatingPointCount == 0){
+                    floatingPointCount = 1
+                    userInputEquationField.text = String(userInputEquationField.text!) + "."
+                    userInputEquation = String(userInputEquationField.text!)
+                }
             }
-            if(floatingPointCount == 0){
-                floatingPointCount = 1
-                userInputEquationField.text = String(userInputEquationField.text!) + "."
-                userInputEquation = String(userInputEquationField.text!)
-            }
+           
         }else{
             floatingPointCount = 1
             userInputEquationField.text = String(userInputEquationField.text!) + "."
