@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     var userInputEquation:String = ""
     var errorFlag:Int = 0
+    var floatingPointCount:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
         userInputEquationField.text = ""
         answerField.text = "0"
         userInputEquation = ""
+        floatingPointCount = 0
         errorFlag = 0
     }
     // + / - positiive value or negative value (need to handle later)
@@ -180,8 +182,23 @@ class ViewController: UIViewController {
         userInputEquation = String(userInputEquationField.text!)
     }
     @IBAction func dotBtn(_ sender: Any) {
-        userInputEquationField.text = String(userInputEquationField.text!) + "."
-        userInputEquation = String(userInputEquationField.text!)
+        let equation:String = String(userInputEquationField.text!);
+        if(equation != ""){
+            if(equation.last! == " " || !equation.last!.isNumber){
+                floatingPointCount = 0
+            }
+            if(floatingPointCount == 0){
+                floatingPointCount = 1
+                userInputEquationField.text = String(userInputEquationField.text!) + "."
+                userInputEquation = String(userInputEquationField.text!)
+            }
+        }else{
+            floatingPointCount = 1
+            userInputEquationField.text = String(userInputEquationField.text!) + "."
+            userInputEquation = String(userInputEquationField.text!)
+        }
+       
+        
     }
     
     // display the answer (need error handling)
