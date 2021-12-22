@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         if(!checkFloatingPoints()){
         let equation:String = String(userInputEquationField.text!);
         if(equation != ""){
-            if(equation.last! == "-"){
+            if(equation.last! == "-" || equation.last! == "%"){
                 answerField.text = "Syntax error"
             }else{
                 let decimalCharacters = CharacterSet.decimalDigits
@@ -57,7 +57,23 @@ class ViewController: UIViewController {
     
     // handle later
     @IBAction func precentageBtn(_ sender: Any) {
-      
+        if(!checkAlreadyExisitOperator()){
+        let equation:String = String(userInputEquationField.text!);
+        if(equation != ""){
+            if(equation.last! == " "){
+                answerField.text = "Syntax error"
+            }else{
+                userInputEquation = String(userInputEquationField.text!) + "%"
+                userInputEquationField.text = String(userInputEquationField.text!) + "%"
+               
+            }
+        }else{
+            userInputEquation = String(userInputEquationField.text!) + " % "
+            userInputEquationField.text = String(userInputEquationField.text!) + "%"
+           
+        }
+            
+        }
     }
     @IBAction func backBtn(_ sender: Any) {
         let equation:String = String(userInputEquationField.text!);
@@ -203,7 +219,9 @@ class ViewController: UIViewController {
     
     // display the answer (need error handling)
     @IBAction func equalBtn(_ sender: Any){
-        let lastEquation:String = String(userInputEquation).replacingOccurrences(of: " x ", with: " * ", options: .literal, range: nil)
+        let preEquation:String = String(userInputEquation).replacingOccurrences(of: " x ", with: " * ", options: .literal, range: nil)
+        let lastEquation:String = String(preEquation).replacingOccurrences(of: "%", with: " / 100.0", options: .literal, range: nil)
+        print(lastEquation)
         if(lastEquation == ""){
             userInputEquationField.text = ""
             answerField.text = "0"
